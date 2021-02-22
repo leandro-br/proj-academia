@@ -1,0 +1,376 @@
+/*CONFIGURAÇÕES PADRÕES DE CSS*/
+.container{
+    width: 90%;
+}
+.bloco{
+    min-height: 100vh;
+}
+.bg-blue{
+    background-color: #2dc7d0;
+}
+.nav-color{
+    background-color: rgba(0,0,0, .7);
+    height: 80px;
+}
+.titulo::after{
+    width: 80px;
+    height: 2px;
+    background-color: #2dc7d0;
+    content: " ";
+    margin: 10px auto;
+    display: block;
+}
+.row{
+    margin-bottom: 0px;
+}
+.cabecalho{
+    margin-bottom: 50px;
+}
+
+/*HOME*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*LOGO*/
+.brand-logo h1{
+    font-size: 0px;
+}
+.brand-logo{
+    background-image: url('../../media/img/logo.png');
+    background-size: cover;
+}
+
+/*MENU*/
+nav{
+    background: none;
+}
+.navbar-fixed{
+    position: absolute;
+    top: 0;
+}
+.nav-wrapper{
+    padding: 45px 0px;
+    display: flex;
+    align-items: center;
+}
+.nav-wrapper li{
+    margin-right: 20px;
+}
+.nav-wrapper li:last-child{
+    margin-right: 0px;
+}
+.nav-wrapper li a{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 300;  
+}
+.nav-wrapper  li a:hover{
+    background: none;
+    color: #2dc7d0;
+    transition: all .8s;
+}
+.side-nav{
+    background: url('../../media/img/textura2.png');
+}
+.side-nav li a{
+    color: #fff;
+    text-transform: capitalize;
+}
+.side-nav li a:hover{
+    color: #2dc7d0;
+    transition: all .8s;
+}
+
+/*BANNER FULL*/
+.banner{
+    background: url(../../media/img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    animation: bg-mudar 20s infinite;
+}
+.banner-content button{
+    margin-right: 5px;
+}
+
+/*ANIMAÇÃO*/    
+@keyframes bg-mudar{
+    40% {background: url('../../media/img/bg2.jpg'); background-size: cover; background-repeat: no-repeat;}
+    80% {background: url('../../media/img/bg3.jpg'); background-size: cover; background-repeat: no-repeat;}
+    100% {background: url('../../media/img/bg.jpg'); background-size: cover; background-repeat: no-repeat;}
+}
+
+/*SOBRE*/
+.sobre{
+    background: url('../../media/img/textura1.png');
+    padding: 40px 0px;
+}
+.sobre h5::after{
+    width: 40px;
+    height: 2px;
+    background-color: #2dc7d0;
+    content: " ";
+    margin: 5px 2px;
+    display: block;
+}
+.sobre p{
+    text-align: justify;
+}
+
+/*SERVICOS*/
+.servicos{
+    background: url('../../media/img/textura2.png');
+    padding: 40px 0px;
+}
+.servicos p{
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 25px;
+    font-size: 1.2rem;
+}
+.card-content p{
+    text-align: left;
+   font-size: 16px;
+}
+.modal-content p{
+    font-size: 15px;
+}
+.tabs{
+    background-color: #111;
+}
+.tabs .tab a{
+    color: #fff;
+}
+.tabs .tab a:hover{
+    color: #2dc7d0;
+}
+.tabs .tab a.active{
+    color: #2dc7d0;
+}
+.tabs .indicator{
+    background-color: #2dc7d0;
+}
+
+/*UNIDADES*/
+.unidades{
+    background: url('../../media/img/bg-unidades.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0px;
+}
+.unidades p{
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 25px;
+    font-size: 1.2rem;
+}
+.unidades img{
+    height: 100%;
+}
+.unidades .card-content p{
+    margin-bottom: 5px;
+}
+.unidades .card-content h5{
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+.unidades .card-content h5::after{
+    width: 40px;
+    height: 2px;
+    background-color: #2dc7d0;
+    content: " ";
+    margin: 5px 2px;
+    display: block;
+}
+
+/*CONTATO*/
+.contato{
+    background: url(../../media/img/textura1.png);
+    padding: 40px 0px;
+}
+.contato h5{
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.contato h6{
+    font-size: 1.2rem;
+    line-height: 25px;
+}
+
+/*CONTATO MAPA*/
+.contato iframe{
+    border: none;
+    width: 100%;
+    min-height: 550px;
+}
+/*CONTATO INFORMAÇÕES*/
+.contato .informacoes{
+    background: url('../../media/img/textura2.png');
+    padding: 20px;
+    min-height: 550px;
+    width: 100%;
+}
+.contato .informacoes i{
+    font-size: 1.3rem;
+    margin-right: 10px;
+    font-weight: 900;
+}
+.informacoes .redes{
+    margin: 40px 0px;
+}
+.redes a{
+    margin-right: 5px;
+}
+.redes .facebook{
+    background-color: #3b5998;
+    color: #fff;
+}
+.redes .instagram{
+    background: linear-gradient(to right, #DD2A7B, #F58529);
+}
+.redes .twitter{
+    background-color: #1DA1F2;
+    color: #fff;
+}
+/*CONTATO FORMULARIO*/
+.contato .formulario{
+    padding: 20px;
+    min-height: 550px;
+    background-color: #fff;
+}
+.formulario h5{
+    font-weight: 900;
+}
+.formulario p{
+    font-size: 1.2rem;
+}
+.depoimentos{
+    padding: 20px 0px;
+}
+.depoimentos h4::after{
+    content: " ";
+    width: 80px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin: 10px auto;
+}
+.depoimentos article img{
+    width: 100px;
+}
+.depoimentos article p{
+    padding: 0px 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 25px;
+    text-align: center;
+}
+.depoimentos span{
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    font-weight: 900;
+}
+.depoimentos article h5{
+    font-weight: 900;
+    color: #fff;
+}
+.depoimentos article i{
+    color: #fff;
+}
+.rodape{
+    background: url(../../media/img/bg-rodape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0px;
+}
+.rodape img{
+    width: 100px;
+}
+
+/*BREACKPOINTS*/
+@media only screen and (min-width: 320px){
+    .nav-wrapper .button-collapse i{
+        font-size: 2.2rem;
+    }
+    .banner-content h2{
+        font-size: 2.2rem;
+        margin-top: 50px;
+        font-weight: 900;
+    }
+    .banner-content h5{
+        line-height: inherit;
+        max-width: 100%;
+        font-size: 14px;
+        margin-bottom: 30px;
+        max-width: 400px;
+    }
+    .brand-logo {
+        width: 90px;
+    }
+    #horarios .modal-content .tabs li a{
+        font-size: 10px;
+    }
+    .unidades{
+        background-attachment:inherit;
+    }
+    .unidades .card img{
+       display: none;
+    }
+    .unidades .card p{
+        color: #111!important;
+    }
+    .contato div{
+        margin-bottom: 10px;
+    }
+    .depoimentos article{
+        margin-bottom: 60px;
+    }
+    .depoimentos article:last-child{
+        margin-bottom: 0px;
+    }
+    .contato .informacoes p{
+        color: gray!important;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .servicos .card{
+        height: 470px;
+    }
+   .depoimentos article p{
+       padding: 0;
+   }
+}
+
+@media only screen and (min-width: 993px) {
+    .banner-content h2{
+        font-size: 4.4rem;
+        margin-top: 150px;
+        font-weight: 900;
+    }
+    .banner-content h5{
+        letter-spacing: 1px;
+        max-width: 800px;
+        text-align: center;
+        margin: 0px auto 30px auto;
+        font-size: 1.3rem;
+    } 
+    .unidades{
+        background-attachment: fixed;
+    }
+    .unidades .card img{
+        display: flex;
+    } 
+    #horarios .modal-content .tabs li a{
+        font-size: inherit;
+    }
+    .depoimentos article{
+        margin-bottom: 0px;
+    }
+}
